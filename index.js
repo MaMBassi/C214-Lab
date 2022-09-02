@@ -16,7 +16,7 @@ console.log('');
 
 //Escolha dos numeros
 let numero1 = 2;
-let numero2 = 0;
+let numero2 = 10;
 
 //Calculos e Apresentaçao do Resultado
 if(opcao == 1){
