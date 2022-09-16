@@ -19,7 +19,8 @@
 - [x] Aula 03: Calculadora
 - [x] Aula 04: GitHub
 - [x] Aula 05: ReadMe
-- [ ] Aula 06
+- [x] Aula 06: API
+- [x] Aula 07:
 
 ### :point_right: Pré-requisitos
 
@@ -49,3 +50,15 @@ Para a execução dos projetos, é possível fazer o download do código direto 
 
 ### :small_blue_diamond: Licença
 MIT
+
+### Aula 06
+
+Para executar o código dessa aula, também é preciso instalar outras dependências. Os comandos para utilizar no terminal IDE:
+  npm install --save express
+  npm install --save cors
+  npm install --save http-status-codes
+  npm install --save validate.js
+  npm install --save moongose
+  npm install --save uuid
+
+A API tem as operações de Create (POST) e Read (GET) para criar os filmes no banco de dados MongoDB e lista=los a partir do parâmetro gênero.
