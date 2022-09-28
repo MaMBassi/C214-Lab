@@ -26,7 +26,7 @@ const create = {
 };
 
 const get = {
-    nome: {
+    genero: {
         presence: {
             allowEmpty: false,
         },
