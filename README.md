@@ -20,7 +20,8 @@
 - [x] Aula 04: GitHub
 - [x] Aula 05: ReadMe
 - [x] Aula 06: API
-- [x] Aula 07:
+- [x] Aula 07: Teste unitário
+- [ ] Aula 08: Teste Mock
 
 ### :point_right: Pré-requisitos
 
@@ -60,5 +61,17 @@ Para executar o código dessa aula, também é preciso instalar outras dependên
   npm install --save validate.js
   npm install --save moongose
   npm install --save uuid
+  
+A API tem as operações de CRUD completa para criar os filmes no banco de dados MongoDB e lista-los a partir do parâmetro gênero.
 
-A API tem as operações de Create (POST) e Read (GET) para criar os filmes no banco de dados MongoDB e lista=los a partir do parâmetro gênero.
+### Aula 07
+
+Os scripts dos testes unitários estão na pasta test.
+
+- response_status.test: script para os testes em relação aos status codes;
+- validation: script para os testes de validação da operação Create.
+
+Para executar o teste, é preciso instalar o Jest: npm i jest
+Após essa etapa, como o package.json já está alterado para executar o teste, é preciso apenas escrever o comando: npm test
+Ao terminar os testes, é gerado uma pasta coverage com o relatório do teste.
+
