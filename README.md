@@ -55,11 +55,17 @@ MIT
 ### Aula 06
 
 Para executar o código dessa aula, também é preciso instalar outras dependências. Os comandos para utilizar no terminal IDE:
+
   npm install --save express
+  
   npm install --save cors
+  
   npm install --save http-status-codes
+  
   npm install --save validate.js
+  
   npm install --save moongose
+  
   npm install --save uuid
   
 A API tem as operações de CRUD completa para criar os filmes no banco de dados MongoDB e lista-los a partir do parâmetro gênero.
@@ -69,9 +75,12 @@ A API tem as operações de CRUD completa para criar os filmes no banco de dados
 Os scripts dos testes unitários estão na pasta test.
 
 - response_status.test: script para os testes em relação aos status codes;
+
 - validation: script para os testes de validação da operação Create.
 
 Para executar o teste, é preciso instalar o Jest: npm i jest
+
 Após essa etapa, como o package.json já está alterado para executar o teste, é preciso apenas escrever o comando: npm test
+
 Ao terminar os testes, é gerado uma pasta coverage com o relatório do teste.
 
