@@ -21,7 +21,7 @@
 - [x] Aula 05: ReadMe
 - [x] Aula 06: API
 - [x] Aula 07: Teste unitário
-- [ ] Aula 08: Teste Mock
+- [x] Aula 08 e 09: API Carro + Teste unitário + Teste Mock
 
 ### :point_right: Pré-requisitos
 
@@ -68,7 +68,9 @@ Para executar o código dessa aula, também é preciso instalar outras dependên
   
   npm install --save uuid
   
-A API tem as operações de CRUD completa para criar os filmes no banco de dados MongoDB e lista-los a partir do parâmetro gênero.
+A API tem as operações de CRUD completo para criar os filmes no banco de dados MongoDB e lista-los a partir do parâmetro gênero.
+
+Parâmetros do filme: nome, diretor, gênero, ano e duração.
 
 ### Aula 07
 
@@ -78,9 +80,18 @@ Os scripts dos testes unitários estão na pasta test.
 
 - validation: script para os testes de validação da operação Create.
 
-Para executar o teste, é preciso instalar o Jest: npm i jest
+Para executar o teste, é preciso instalar o Jest: npm install --save jest
 
 Após essa etapa, como o package.json já está alterado para executar o teste, é preciso apenas escrever o comando: npm test
 
 Ao terminar os testes, é gerado uma pasta coverage com o relatório do teste.
 
+### Aulas 08 e 09
+
+As aulas 08 e 09 são um compilado das aulas 06 e 07 aplicado no tema Carro.
+
+A API tem as operações de CRUD completo para criar os carros no banco de dados MongoDB e lista-los a partir do parâmetro marca. Para verificarmos a execução básica da API, é preciso escrever o comando: npm start.
+
+Parâmetros do carro: marca, modelo, combustível, ano e cor.
+
+Para os testes unitários e mock, é preciso instalar o jest. O package.json já está alterado para executar os testes e gerar a pasta coverage com o relatório do teste. Dessa maneira, é preciso apenas escrever o comando, npm test.
