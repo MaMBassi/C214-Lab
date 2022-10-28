@@ -22,6 +22,8 @@
 - [x] Aula 06: API
 - [x] Aula 07: Teste unitário
 - [x] Aula 08 e 09: API Carro + Teste unitário + Teste Mock
+- [ ] Aula 10: CI/CD
+- [x] Aula 11: Design Patterns
 
 ### :point_right: Pré-requisitos
 
@@ -95,3 +97,13 @@ A API tem as operações de CRUD completo para criar os carros no banco de dados
 Parâmetros do carro: marca, modelo, combustível, ano e cor.
 
 Para os testes unitários e mock, é preciso instalar o jest. O package.json já está alterado para executar os testes e gerar a pasta coverage com o relatório do teste. Dessa maneira, é preciso apenas escrever o comando, npm test.
+
+### Aula 10
+
+### Aula 11
+
+O arquivo Soma.js é uma classe que recebe como parâmetro dois números. Há um método (getSoma) para retornar a soma desses números.
+
+O arquivo factory.js realiza o mesmo processo que a classe Soma, mas de uma maneira mais simplificada, sem precisar utilizar o comando new para a criação da instância do objeto.
+
+Para a execução dos programas, utilizou-se a extensão Code Runner.
