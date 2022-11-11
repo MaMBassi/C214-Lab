@@ -24,6 +24,7 @@
 - [x] Aula 08 e 09: API Carro + Teste unitário + Teste Mock
 - [ ] Aula 10: CI/CD
 - [x] Aula 11: Design Patterns
+- [x] Aula 12 e 13: React
 
 ### :point_right: Pré-requisitos
 
