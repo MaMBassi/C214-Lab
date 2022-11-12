@@ -1,4 +1,4 @@
-import { FaUserNinja } from 'react-icons/fa';
+import {SlPlus } from "react-icons/sl";
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 
@@ -38,7 +38,7 @@ export default function Create() {
 
             <div className="content">
                 <Title name="Registrar novo usuário">
-                    <FaUserNinja size={30} />
+                    <SlPlus size={30} />
                 </Title>
 
                 <div className="container">

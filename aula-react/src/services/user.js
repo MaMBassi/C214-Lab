@@ -13,18 +13,18 @@ const ClientUsers = {
         }
     },
     
-    async listUser(data) {
+    async listUser( ) {
         try {
-            const response = await client.get(`${userPath}/list`, data);
+            const response = await client.get(`${userPath}/list`);
             return response;
         } catch (e) {
             return e;
         }
     },
 
-    async listUserEmail(data) {
+    async listByEmail(data) {
         try {
-            const response = await client.get(`${userPath}/listUserEmail`, data);
+            const response = await client.get(`${userPath}/listByEmail/${data.email}`);
             return response;
         } catch (e) {
             return e;

@@ -1,6 +1,6 @@
-import { FaUserNinja } from 'react-icons/fa';
-import { useState } from 'react';
 import { toast } from 'react-toastify';
+import { SlList } from "react-icons/sl";
+import { useState } from 'react';
 
 import ClientUsers from '../../services/user.js';
 
@@ -11,24 +11,19 @@ import './style.css';
 
 export default function ListUser() {
 
-    const [nome, getNome] = useState('');
-    const [email, getEmail] = useState('');
+    const [userName, setUserName] = useState([]);
 
     async function handleListUser(e) {
         e.preventDefault();
 
-        const data = {
-            nome: nome,
-            email: email,
-        }
-
-        const listUser = await ClientUsers.listUser(data);
-        if (listUser.status === 200) {
-            toast.success('Usuário encontrado com sucesso!');
+        const update = await ClientUsers.listUser();
+        if (update.status === 200) {
+            toast.success('Usuários encontrados com sucesso!');
+            const userNome = update.data;
+            setUserName(userNome);
         } else {
             toast.error('Ops algo deu errado!');
         }
-
     }
 
     return (
@@ -36,21 +31,21 @@ export default function ListUser() {
             <Sidebar />
 
             <div className="content">
-                <Title name="Buscar usuário">
-                    <FaUserNinja size={30} />
+                <Title name="Listar usuários">
+                    <SlList size={30} />
                 </Title>
 
                 <div className="container">
-                    <form className="form-profile" onSubmit={handleUpdate}>
-
-                        <label>Nome</label>
-                        <input type="text" value={nome} onChange={(e) => setNome(e.target.value)} />
-
-                        <label>E-mail</label>
-                        <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
-
-                        <button type="submit">Atualizar</button>
+                    <form className="form-profile" onSubmit={handleListUser}>
+                        <button type="submit">Listar usuários</button>
                     </form>
+                </div>
+                <div className="lista">
+                    <label>Usuários: </label>
+                    <p>
+                    {userName.map((usuarios) => (
+                        <li>{usuarios.nome}</li>
+                    ))}</p>
                 </div>
             </div>
         </div>
