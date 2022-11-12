@@ -108,3 +108,15 @@ O arquivo Soma.js é uma classe que recebe como parâmetro dois números. Há um
 O arquivo factory.js realiza o mesmo processo que a classe Soma, mas de uma maneira mais simplificada, sem precisar utilizar o comando new para a criação da instância do objeto.
 
 Para a execução dos programas, utilizou-se a extensão Code Runner.
+
+### Aulas 12 e 13
+
+Banco de Dados: MongoDB
+Linguagem de programação: JS, React
+
+A pasta basic-API contém a API para Cadastrar, Listar e Deletar usuários.
+
+O projeto é uma aplicação web para Cadastrar, Listar e Deletar usuários. Na page Cadastrar, o usuário precisa entrar com as informações de nome, e-mail e senha. As opções Listar, lista todos os usuários cadastrados ou apenas o usuário com o e-mail informado. Por último, há a opção de deletar um usuário, informando seu e-mail.
+
+Para executar o projeto, é preciso executar a API e o basic-font. No terminal da IDE, para cada serviço, nos respectivos diretórios, é preciso inicializar com o comando npm init para instalar o node modules, as dependências e, em seguida, npm start para conectar ao banco e executar a aplicação.
+
